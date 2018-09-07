@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookish", "Bookish\Bookish.csproj", "{3D3DD5C8-81BB-4837-AFC8-E060A3F9AAB9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "Bookish\ConsoleApp.csproj", "{3D3DD5C8-81BB-4837-AFC8-E060A3F9AAB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "ClassLibrary1\DataAccess.csproj", "{2DE40A00-4229-4029-BB96-BCCD52EF034E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3D3DD5C8-81BB-4837-AFC8-E060A3F9AAB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D3DD5C8-81BB-4837-AFC8-E060A3F9AAB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D3DD5C8-81BB-4837-AFC8-E060A3F9AAB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DE40A00-4229-4029-BB96-BCCD52EF034E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DE40A00-4229-4029-BB96-BCCD52EF034E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DE40A00-4229-4029-BB96-BCCD52EF034E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DE40A00-4229-4029-BB96-BCCD52EF034E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
