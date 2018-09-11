@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "Bookish\Conso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "ClassLibrary1\DataAccess.csproj", "{2DE40A00-4229-4029-BB96-BCCD52EF034E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{652B20D7-694F-4401-83AC-702AECA46213}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2DE40A00-4229-4029-BB96-BCCD52EF034E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DE40A00-4229-4029-BB96-BCCD52EF034E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DE40A00-4229-4029-BB96-BCCD52EF034E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{652B20D7-694F-4401-83AC-702AECA46213}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{652B20D7-694F-4401-83AC-702AECA46213}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{652B20D7-694F-4401-83AC-702AECA46213}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{652B20D7-694F-4401-83AC-702AECA46213}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

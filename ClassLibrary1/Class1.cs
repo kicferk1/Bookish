@@ -42,11 +42,11 @@ namespace DataAccess
 
     public class User
     {
-        public readonly int id;
+        public readonly string id;
         public readonly string user_name;
         public readonly string password_hash;
 
-        public User(int id, string user_name, string password_hash)
+        public User(string id, string user_name, string password_hash)
         {
             this.id = id;
             this.user_name = user_name;
@@ -57,11 +57,11 @@ namespace DataAccess
     public class Borrow
     {
         public readonly int id;
-        public readonly int user_id;
+        public readonly string user_id;
         public readonly int book_id;
         public readonly DateTime date_due;
 
-        public Borrow(int id, int user_id, int book_id, DateTime date_due)
+        public Borrow(int id, string user_id, int book_id, DateTime date_due)
         {
             this.id = id;
             this.user_id = user_id;

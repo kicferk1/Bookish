@@ -1,0 +1,68 @@
+﻿@using System.Collections
+@model Web.Models.BookViewModel
+@{
+    ViewBag.Title = "BookSearch";
+}
+
+<h2>@ViewBag.Title.</h2>
+
+<h3>Available Books</h3>
+@{
+    foreach (var book in ViewBag.AvailableBooks)
+    {
+        <div>
+            <div>@book.title</div>
+            <li>@Html.ActionLink("Borrow Book NOW!!!", "Borrow", "Book", routeValues: new { id = book.id }, htmlAttributes: new { id = "loginLink" })</li>
+        </div>
+    }
+}
+
+<h3>Borrowed Books</h3>
+@{
+    foreach (var book in ViewBag.UnavailableBooks)
+    {
+        <div>
+            <div>@book.title</div>
+            <li>@Html.ActionLink("Unborrow Book NOW!!!", "UnBorrow", "Book", routeValues: new { id = book.id }, htmlAttributes: new { id = "loginLink" })</li>
+        </div>
+    }
+}
+
+@using (Html.BeginForm("Add", "Book", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    <h4>Add new book</h4>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Title, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Title, new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Author, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Author, new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.ISBN, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.ISBN, new { @class = "form-control" })
+        </div>
+    </div>
+    
+    <div class="form-group">
+        @Html.LabelFor(m => m.amount, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.amount, new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default" value="ADD" />
+        </div>
+    </div>
+}
